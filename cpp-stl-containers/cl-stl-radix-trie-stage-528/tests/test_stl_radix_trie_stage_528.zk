@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-528: Test Suite
+import "../crt_528.zk"
+
+fn test_run():
+    res := trie_next_node_528(1, 65)
+    if res != ((257 ^ 65) + 528) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-528!")

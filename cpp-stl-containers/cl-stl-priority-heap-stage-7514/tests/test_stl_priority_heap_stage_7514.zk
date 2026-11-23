@@ -1,0 +1,10 @@
+// cl-stl-priority-heap-stage-7514: Test Suite
+import "../cpq_7514.zk"
+
+fn test_run():
+    res := heap_parent_7514(5)
+    if res != 2 + 4: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-priority-heap-stage-7514!")

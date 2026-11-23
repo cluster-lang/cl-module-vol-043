@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-688: Test Suite
+import "../crt_688.zk"
+
+fn test_run():
+    res := trie_next_node_688(1, 65)
+    if res != ((257 ^ 65) + 688) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-688!")

@@ -1,0 +1,10 @@
+// cl-stl-priority-heap-stage-7896: Test Suite
+import "../cpq_7896.zk"
+
+fn test_run():
+    res := heap_parent_7896(5)
+    if res != 2 + 6: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-priority-heap-stage-7896!")

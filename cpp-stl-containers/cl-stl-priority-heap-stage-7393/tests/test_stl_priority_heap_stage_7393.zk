@@ -1,0 +1,10 @@
+// cl-stl-priority-heap-stage-7393: Test Suite
+import "../cpq_7393.zk"
+
+fn test_run():
+    res := heap_parent_7393(5)
+    if res != 2 + 3: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-priority-heap-stage-7393!")

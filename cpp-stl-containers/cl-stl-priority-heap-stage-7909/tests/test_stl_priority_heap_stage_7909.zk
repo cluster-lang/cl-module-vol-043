@@ -1,0 +1,10 @@
+// cl-stl-priority-heap-stage-7909: Test Suite
+import "../cpq_7909.zk"
+
+fn test_run():
+    res := heap_parent_7909(5)
+    if res != 2 + 9: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-priority-heap-stage-7909!")

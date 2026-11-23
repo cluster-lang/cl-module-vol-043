@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-472: Test Suite
+import "../crt_472.zk"
+
+fn test_run():
+    res := trie_next_node_472(1, 65)
+    if res != ((257 ^ 65) + 472) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-472!")

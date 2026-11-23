@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-2531: Test Suite
+import "../crt_2531.zk"
+
+fn test_run():
+    res := trie_next_node_2531(1, 65)
+    if res != ((257 ^ 65) + 2531) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-2531!")

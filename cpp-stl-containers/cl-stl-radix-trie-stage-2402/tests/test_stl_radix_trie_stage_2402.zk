@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-2402: Test Suite
+import "../crt_2402.zk"
+
+fn test_run():
+    res := trie_next_node_2402(1, 65)
+    if res != ((257 ^ 65) + 2402) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-2402!")

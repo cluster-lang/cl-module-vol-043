@@ -1,0 +1,10 @@
+// cl-stl-priority-heap-stage-8887: Test Suite
+import "../cpq_8887.zk"
+
+fn test_run():
+    res := heap_parent_8887(5)
+    if res != 2 + 7: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-priority-heap-stage-8887!")

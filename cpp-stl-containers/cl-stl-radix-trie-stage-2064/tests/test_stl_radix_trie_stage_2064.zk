@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-2064: Test Suite
+import "../crt_2064.zk"
+
+fn test_run():
+    res := trie_next_node_2064(1, 65)
+    if res != ((257 ^ 65) + 2064) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-2064!")

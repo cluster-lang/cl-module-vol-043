@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-206: Test Suite
+import "../crt_206.zk"
+
+fn test_run():
+    res := trie_next_node_206(1, 65)
+    if res != ((257 ^ 65) + 206) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-206!")

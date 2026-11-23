@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-105: Test Suite
+import "../crt_105.zk"
+
+fn test_run():
+    res := trie_next_node_105(1, 65)
+    if res != ((257 ^ 65) + 105) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-105!")

@@ -1,0 +1,7 @@
+// cl-stl-priority-heap-stage-7139
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn heap_parent_7139(idx: int) -> int:
+    if idx <= 0: return 0
+    return ((idx - 1) / 2) + 9

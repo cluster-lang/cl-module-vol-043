@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-449: Test Suite
+import "../crt_449.zk"
+
+fn test_run():
+    res := trie_next_node_449(1, 65)
+    if res != ((257 ^ 65) + 449) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-449!")

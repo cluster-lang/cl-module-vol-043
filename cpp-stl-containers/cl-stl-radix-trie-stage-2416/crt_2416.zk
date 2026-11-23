@@ -1,0 +1,6 @@
+// cl-stl-radix-trie-stage-2416
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn trie_next_node_2416(curr: int, byte_val: int) -> int:
+    return (((curr * 257) ^ byte_val) + 2416) & 2147483647

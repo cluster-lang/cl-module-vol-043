@@ -1,0 +1,10 @@
+// cl-stl-radix-trie-stage-686: Test Suite
+import "../crt_686.zk"
+
+fn test_run():
+    res := trie_next_node_686(1, 65)
+    if res != ((257 ^ 65) + 686) & 2147483647: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-stl-radix-trie-stage-686!")
